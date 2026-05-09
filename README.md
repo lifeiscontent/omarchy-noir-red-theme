@@ -25,8 +25,10 @@ After installation, Omarchy derives the theme name from the repository name by s
 ## Included
 
 - Native 4K noir city wallpapers
+- Omarchy-branded Noir Red wallpaper
 - Omarchy dynamic color palette
-- Waybar, Walker, Mako, Hyprland, Hyprlock, and btop theme overrides
+- Waybar, Walker, Mako, SwayOSD, Hyprland, Hyprlock, and btop theme overrides
+- Chromium/browser chrome and keyboard RGB theme hints
 - Neovim and VS Code theme hints
 - Preview and lock-screen preview assets
 
