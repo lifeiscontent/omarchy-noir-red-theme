@@ -1,18 +1,24 @@
 # Omarchy Noir Red Theme
 
-A cinematic noir theme for [Omarchy](https://omarchy.org): rainy city nights, warm off-white light, deep crimson accents, and black negative space.
+A cinematic noir theme for [Omarchy](https://omarchy.org): rainy city nights, warm off-white light, deep crimson accents, and plenty of black negative space.
 
 ![Noir Red preview](preview.png)
 
 ## Install
 
-Install through Omarchy's extra theme flow:
+Install with Omarchy:
 
 ```bash
 omarchy theme install https://github.com/lifeiscontent/omarchy-noir-red-theme.git
 ```
 
-Or from the Omarchy menu:
+Then select **Noir Red** from the theme picker, or run:
+
+```bash
+omarchy theme set "Noir Red"
+```
+
+You can also install it from the Omarchy menu:
 
 ```text
 Super + Alt + Space → Install → Style → Theme
@@ -20,32 +26,22 @@ Super + Alt + Space → Install → Style → Theme
 
 Paste the GitHub repository URL when prompted.
 
-After installation, Omarchy derives the theme name from the repository name by stripping `omarchy-` and `-theme`, so this repository installs as **Noir Red**.
-
-## Included
+## What's included
 
 - Native 4K noir city wallpapers
 - Omarchy-branded Noir Red wallpaper
-- Omarchy dynamic color palette
-- Waybar, Walker, Mako, SwayOSD, Hyprland, Hyprlock, and btop theme overrides
-- Chromium/browser chrome and keyboard RGB theme hints
+- Full Omarchy color palette for generated app themes
+- Waybar, Walker, Mako, SwayOSD, Hyprland, Hyprlock, and btop styling
+- Browser chrome and keyboard RGB color hints
 - Neovim and VS Code theme hints
 - Preview and lock-screen preview assets
 
-## Wallpaper cycling
+Omarchy also uses the included palette to theme supported terminals and apps such as Alacritty, Ghostty, Kitty, Foot, Helix, Obsidian, and Zed when those integrations are installed through Omarchy.
 
-After installing, cycle the included wallpapers with:
+## Wallpapers
+
+Cycle the included wallpapers with:
 
 ```bash
 omarchy theme bg next
 ```
-
-## Repository naming
-
-Omarchy recommends naming distributable theme repositories as:
-
-```text
-omarchy-[themename]-theme
-```
-
-That keeps the installed theme name clean in the theme selector.
