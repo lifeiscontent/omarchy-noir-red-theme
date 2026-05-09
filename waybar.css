@@ -1,0 +1,69 @@
+@define-color foreground #EDE7DD;
+@define-color background #030303;
+@define-color noir_panel rgba(3, 3, 3, 0.82);
+@define-color noir_card rgba(16, 16, 16, 0.92);
+@define-color noir_muted #565656;
+@define-color noir_dim #8C8C8C;
+@define-color noir_red #C1121F;
+@define-color noir_red_hot #D61F2D;
+
+window#waybar {
+  background: @noir_panel;
+  border-bottom: 1px solid @noir_red;
+  box-shadow: inset 0 -1px rgba(193, 18, 31, 0.18);
+}
+
+window#waybar * {
+  background: transparent;
+  color: @foreground;
+}
+
+#custom-omarchy {
+  color: @noir_red;
+}
+
+#workspaces button {
+  color: @noir_muted;
+  border-bottom: 1px solid transparent;
+}
+
+#workspaces button.active {
+  color: @background;
+  background: @noir_red;
+}
+
+#workspaces button.visible:not(.active) {
+  color: @foreground;
+  border-bottom-color: @noir_red;
+}
+
+#workspaces button.empty {
+  color: @noir_muted;
+  opacity: 0.45;
+}
+
+#clock {
+  color: @foreground;
+  font-weight: 700;
+}
+
+#custom-update,
+#custom-voxtype.recording,
+#custom-screenrecording-indicator.active,
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active,
+#battery.warning,
+#battery.critical,
+#network.disconnected,
+#pulseaudio.muted {
+  color: @noir_red_hot;
+}
+
+tooltip {
+  background: @noir_card;
+  border: 1px solid @noir_red;
+}
+
+tooltip label {
+  color: @foreground;
+}

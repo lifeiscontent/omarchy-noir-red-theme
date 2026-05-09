@@ -1,0 +1,85 @@
+@define-color selected-text #C1121F;
+@define-color text #EDE7DD;
+@define-color base #030303;
+@define-color border #2A2A2A;
+@define-color accent #C1121F;
+@define-color foreground #EDE7DD;
+@define-color background #030303;
+@define-color muted #565656;
+@define-color card #101010;
+
+.box-wrapper {
+  background: alpha(@base, 0.88);
+  border: 1px solid @border;
+  padding: 16px;
+  box-shadow: 0 28px 90px alpha(#000000, 0.86);
+}
+
+.search-container {
+  background: alpha(@card, 0.76);
+  border: 1px solid alpha(@foreground, 0.10);
+  padding: 12px 14px;
+}
+
+.input {
+  caret-color: @accent;
+  color: @text;
+}
+
+.input placeholder {
+  color: @muted;
+  opacity: 1;
+}
+
+child:selected {
+  background: alpha(@foreground, 0.055);
+}
+
+child:selected .item-box {
+  border-left: 2px solid @accent;
+}
+
+child:selected .item-box * {
+  color: @text;
+}
+
+child:selected .item-text {
+  color: @text;
+  font-weight: 700;
+}
+
+child:hover {
+  background: alpha(@foreground, 0.035);
+}
+
+.item-subtext,
+.keybind-hints {
+  color: @muted;
+}
+
+.item-box {
+  padding-left: 10px;
+}
+
+.item-text-box {
+  padding: 11px 0;
+}
+
+.item-image {
+  margin-right: 12px;
+  opacity: 0.88;
+  -gtk-icon-transform: scale(0.82);
+}
+
+.normal-icons {
+  -gtk-icon-size: 14px;
+}
+
+.large-icons {
+  -gtk-icon-size: 24px;
+}
+
+.keybind-hints {
+  background: alpha(@card, 0.70);
+  border-top: 1px solid alpha(@foreground, 0.08);
+}
